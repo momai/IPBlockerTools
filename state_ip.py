@@ -49,5 +49,5 @@ for ip, count in ip_count.most_common():
 # Сохраняем результаты в файл
 with open('blocked_ips.txt', 'w') as f:
     for ip, count in ip_count.most_common():
-        if count > 3:
+        if count > 5:
             f.write(f'{ip} {count}\n')

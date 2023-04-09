@@ -43,14 +43,11 @@ with open('nginx/access.log', 'r') as file:
 
 # Вывод результатов в консоль
 for ip, count in ip_count.most_common():
-    print(f'{ip} {count}')
-
-# Сохраняем результаты в файл
-#with open('blocked_ips.txt', 'w') as f:
-#    for ip, count in ip_count.most_common():
-#        f.write(f'{ip}\n')
+    if count > 5:
+        print(f'{ip} {count}')
 
 # Сохраняем результаты в файл
 with open('blocked_ips.txt', 'w') as f:
     for ip, count in ip_count.most_common():
-        f.write(f'{ip} {count}\n')
+        if count > 3:
+            f.write(f'{ip} {count}\n')

@@ -36,6 +36,9 @@ python state_ip.py
 
 Скрипт запросит подтверждение на блокировку каждого IP-адреса из списка. Выберите `y` для блокировки или `n` для пропуска.
 
+![image](https://user-images.githubusercontent.com/1340282/230797133-f1d0cecd-ec91-4a43-bbb1-4fc6eee76689.png)
+
+
 ## Зависимости
 
 - Python 3

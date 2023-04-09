@@ -36,7 +36,7 @@ sudo iptables -N BLOCKED_IPS 2>/dev/null || true
 #    else
 #        echo "Пропуск IP-адреса $IP_ADDRESS"
 #    fi
-#done < blocked_ips.txt
+#done < $output_file_path
 
 while read -r line; do
     IP_ADDRESS=$(echo "$line" | awk '{print $1}')

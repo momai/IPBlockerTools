@@ -17,6 +17,7 @@
 
 ## Использование
 
+- Установите недостающие зависимости. `sudo apt install whois jq -y`
 - Склонируйте репозиторий
 - Переименуйте `sample.env` и `sample.config.json` в `.env` и `config.json` соответственно.
 - Внесите в файле .env данные о API KEY ABUSEIPDB.

@@ -1,0 +1,6 @@
+{
+"file_path": "nginx/access.log",
+"time_interval_seconds": 10,
+"output_threshold_count": 3,
+"output_file_path": "blocked_ips.txt"
+}
